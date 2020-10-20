@@ -3,14 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>biglietto del treno</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/f9888a3f24.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1 id="titolo"></h1>
+
+    <div class="container">
+
+      <!-- navigazione -->
+      <nav>
+        <a class="logo">BELE COMPANY</a>
+
+        <div class="list">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">Offerte</a></li>
+            <li><a href="#">Altri treni</a></li>
+            <li><a href="#">Info</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- corpo della pagina -->
+      <main>
+
+        <div class="title">
+          <h1>Calcola il tuo ticket</h1>
+        </div>
+
+        <div class="box">
+
+          <div class="costo">
+            <span>Il costo del tuo biglietto è:</span>
+            <span id="dinamic"></span>
+          </div>
+
+          <div class="button">
+            <div class="top">
+              <a class="gray" href="#">Anulla</a>
+
+              <a class="red" href="#">Procedi</a>
+            </div>
+
+            <div class="bottom">
+              <a class="red" href="#">Ricalcola</a>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="social">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+
 
     <!-- javascript -->
     <script type="text/javascript" src="js/script.js">
     </script>
-
   </body>
 </html>

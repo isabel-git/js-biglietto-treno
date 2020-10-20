@@ -3,4 +3,151 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url(../img/train.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* navigazione */
+nav{
+  height: 100px;
+  background-color: darkred;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+nav .logo{
+  /* regole di debug */
+  width: 30%;
+  /* background-color: black; */
+  /* fine debug */
+  font-size: 40px;
+}
+
+nav .list{
+  /* regole di debug */
+  width: 40%;
+  /* background-color: blue; */
+  /* fine debug */
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .list a{
+  /* regole di debug */
+  /* border: 3px solid black; */
+  /* fine debug */
+  font-size: 20px;
+  padding: 20px;
+}
+
+nav .list a:hover{
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+/* inizio corpo della pagina */
+main{
+  width: 60%;
+  min-height: 30%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  margin-top: 30px;
+}
+
+.title{
+  text-align: center;
+}
+
+.box .costo{
+  font-size: 20px;
+}
+
+.button{
+  width: 300px;
+  text-align: center;
+}
+
+.button .top,
+.button .bottom{
+  display: flex;
+  margin-top: 5px;
+}
+
+.button a{
+  flex-grow: 1;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+a.gray{
+  background-color: #ccc;
+  color: brown;
+  border: 1px solid brown;
+}
+
+a.gray:hover{
+  background-color: gray;
+}
+
+a.red{
+  background-color: brown;
+  color: white;
+  border: 1px solid white;
+}
+
+a.red:hover{
+  background-color: darkred;
+}
+
+/* footer */
+footer{
+  height: 50px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social{
+  font-size: 30px;
+
+}
+
+footer .social i{
+  color: brown;
+  padding: 10px;
+}
+
+footer .social i:hover{
+  color: darkred;
 }

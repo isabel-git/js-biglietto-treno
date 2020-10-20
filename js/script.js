@@ -38,4 +38,4 @@ var costoTot;
 
 // OUTPUT
   // dire all'utente il costo del biglietto
-  document.getElementById("titolo").innerHTML = costoTot.toFixed(2);
+  document.getElementById("dinamic").innerHTML =costoTot.toFixed(2) + "&#8364;";
