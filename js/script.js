@@ -1,3 +1,4 @@
+// dichiarazione variabili globali
 var costoBase;
 var scontoUno;
 var scontoDue;
@@ -22,7 +23,7 @@ var costoTot;
   scontoDue = ((costoBase * 40) / 100);
   console.log("sconti:",scontoUno, scontoDue);
 
-
+  // condizioni
   if (eta < 18) {
     // se l'utente è minorenne
     costoTot = costoBase - scontoUno;
@@ -33,7 +34,8 @@ var costoTot;
     // se l'utente è tra i 19 e i 64 anni
     costoTot = costoBase;
   }
-  console.log("costo del biglietto ",costoTot.toFixed(2));
+  console.log("costo del biglietto ",costoTot);
 
 // OUTPUT
   // dire all'utente il costo del biglietto
+  document.getElementById("titolo").innerHTML = costoTot.toFixed(2);
