@@ -110,6 +110,7 @@ main{
 }
 
 a.gray{
+  margin-right: 5px;
   background-color: #ccc;
   color: brown;
   border: 1px solid brown;
