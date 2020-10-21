@@ -25,10 +25,10 @@ var costoTot;
     // se l'utente è over 65
     costoTot = costoBase - ((costoBase * 40) / 100);
     console.log("costo scontato del 40%: ",costoTot);
-  } else {
+  }  else {
     // se l'utente è tra i 18 e i 65 anni
     costoTot = costoBase;
-    console.log("costo del biglietto base: ",costoTot);
+    // console.log("costo del biglietto base: ",costoTot);
   }
 
 // OUTPUT
