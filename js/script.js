@@ -1,7 +1,5 @@
 // dichiarazione variabili globali
-var costoBase;
-var scontoUno;
-var scontoDue;
+var costo;
 var costoTot;
 
 // INPUT
@@ -10,31 +8,28 @@ var costoTot;
   console.log("kilometri ",km);
 
   // chiedere all'utente la sua età
-  var eta = prompt("inserisci la tua età");
+  var eta = parseInt(prompt("inserisci la tua età"));
   console.log("età ",eta);
 
-// OPERAZIONI
+// OPERAZIONI COSTO BIGLIETTO
   // costo di base
   costoBase = (0.21 * km);
   console.log("costo base",costoBase);
 
-  // sconti
-  scontoUno = ((costoBase * 20) / 100);
-  scontoDue = ((costoBase * 40) / 100);
-  console.log("sconti:",scontoUno, scontoDue);
-
   // condizioni
   if (eta < 18) {
     // se l'utente è minorenne
-    costoTot = costoBase - scontoUno;
+    costoTot = costoBase - ((costoBase * 20) / 100);
+    console.log("costo scontato del 20%: ",costoTot);
   } else if (eta > 65) {
     // se l'utente è over 65
-    costoTot = costoBase - scontoDue;
+    costoTot = costoBase - ((costoBase * 40) / 100);
+    console.log("costo scontato del 40%: ",costoTot);
   } else {
-    // se l'utente è tra i 19 e i 64 anni
+    // se l'utente è tra i 18 e i 65 anni
     costoTot = costoBase;
+    console.log("costo del biglietto base: ",costoTot);
   }
-  console.log("costo del biglietto ",costoTot);
 
 // OUTPUT
   // dire all'utente il costo del biglietto
